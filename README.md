@@ -1,5 +1,7 @@
 Single Image Super Resolution using Parallel Channel Attention Based on RCAN Method (RPCAN)
 The  code is based on the EDSR (Enhanced Deep Super-Resolution) and RCAN (Residual Channel Attention Network) methods. 
+https://github.com/sanghyun-son/EDSR-PyTorch
+https://github.com/yulunzhang/RCAN
 This implementation takes the foundations of those previous models and builds upon them.
 
 This code is an implementation of the paper titled "Single Image Super Resolution using Parallel Channel Attention Based on RCAN Method (RPCAN)" which was recently submitted.
