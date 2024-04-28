@@ -38,4 +38,12 @@ rate set to 10-4. The learning rate is halved  after every 200 update steps acro
    ![image](https://github.com/AminTolou/RPCAN/assets/44254357/4c64b44f-77ae-41ae-8a03-098f0747b4d3)
 
 
+   Prepare training data
+Download DIV2K training data (800 training + 100 validtion images) from DIV2K dataset "https://data.vision.ee.ethz.ch/cvl/DIV2K/"
+
+Specify '--dir_data' based on the HR and LR images path. In option.py, '--ext' is set as 'sep_reset', which first convert .png to .npy. If all the training images (.png) are converted to .npy files, then set '--ext sep' to skip converting files.
+
+For more informaiton, please refer to EDSR(PyTorch).
+
+
 
