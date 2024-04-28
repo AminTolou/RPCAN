@@ -43,7 +43,7 @@ Download DIV2K training data (800 training + 100 validtion images) from DIV2K da
 
 Specify '--dir_data' based on the HR and LR images path. In option.py, '--ext' is set as 'sep_reset', which first convert .png to .npy. If all the training images (.png) are converted to .npy files, then set '--ext sep' to skip converting files.
 
-For more informaiton, please refer to EDSR(PyTorch).
+bench mark data base that were used for Test are available at https://drive.google.com/file/d/1WTcGH3IPsqbPmPQh79GoQCT3x3rSG46O/view?usp=drive_link
 
 
 
