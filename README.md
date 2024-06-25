@@ -70,4 +70,4 @@ networkx --numpy--Pillow
 pycparser--pyparsing python-dateutil
 PyWavelets PyYAML scikit-image scipy
 six  torch==2.1.0  torchvision==0.16.0  torchaudio==2.1.0
-tqdm  typing
+tqdm 
