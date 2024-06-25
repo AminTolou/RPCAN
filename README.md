@@ -45,5 +45,7 @@ Specify '--dir_data' based on the HR and LR images path. In option.py, '--ext' i
 
 bench mark data base that were used for Test are available at https://drive.google.com/file/d/1WTcGH3IPsqbPmPQh79GoQCT3x3rSG46O/view?usp=drive_link
 
+you can also download all database from https://github.com/ChaofWang/Awesome-Super-Resolution/blob/master/dataset.md
+
 
 
