@@ -40,6 +40,7 @@ rate set to 10-4. The learning rate is halved  after every 200 update steps acro
 ########################################################
 How to train the model
 ########################################################
+
 1- Prepare training data
 Download DIV2K training data
 
