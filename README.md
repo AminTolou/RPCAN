@@ -37,15 +37,51 @@ rate set to 10-4. The learning rate is halved  after every 200 update steps acro
 
    ![image](https://github.com/AminTolou/RPCAN/assets/44254357/4c64b44f-77ae-41ae-8a03-098f0747b4d3)
 
+############################################################################################
+How to train the model
+############################################################################################
+1- Prepare training data
+Download DIV2K training data
 
-   Prepare training data
-Download DIV2K training data (800 training + 100 validtion images) from DIV2K dataset "https://data.vision.ee.ethz.ch/cvl/DIV2K/"
+2- Specify '--dir_data' based on the HR and LR images path. In option.py, '--ext' is set as 'sep_reset', which first convert .png to .npy. If all the training images (.png) are converted to .npy files, then set '--ext sep' to skip converting files.
 
-Specify '--dir_data' based on the HR and LR images path. In option.py, '--ext' is set as 'sep_reset', which first convert .png to .npy. If all the training images (.png) are converted to .npy files, then set '--ext sep' to skip converting files.
+3-  download bench mark data base that were used for Test 
 
-bench mark data base that were used for Test are available at https://drive.google.com/file/d/1WTcGH3IPsqbPmPQh79GoQCT3x3rSG46O/view?usp=drive_link
+4- Unpack the tar file to any place you want. Then, change the dir_data argument in src/option.py to the place where DIV2K images are located.
 
-you can also download all database from https://github.com/ChaofWang/Awesome-Super-Resolution/blob/master/dataset.md
+5-We recommend you to pre-process the images before training. This step will decode all png files and save them as binaries. Use --ext sep_reset argument on your first run. You can skip the decoding part and use saved binaries with --ext sep argument.
 
+You can train code by yourself. All scripts are provided in the src/demo.sh. 
 
-
+cd src       
+sh demo.sh
+###############################################################################################
+Dependencies
+################################################################################################
+cffi==1.14.2
+cmake==3.18.0
+cycler==0.10.0
+decorator==4.4.2
+future==0.18.2
+imageio==2.9.0
+intel-openmp==2020.0.133
+kiwisolver==1.1.0
+matplotlib==3.0.3
+mkl==2019.0
+mkl-include==2019.0
+networkx==2.4
+numpy==1.18.5
+Pillow==7.2.0
+pycparser==2.20
+pyparsing==2.4.7
+python-dateutil==2.8.1
+PyWavelets==1.1.1
+PyYAML==5.3.1
+scikit-image==0.15.0
+scipy==1.4.1
+six==1.15.0
+ torch==2.1.0
+ torchvision==0.16.0
+ torchaudio==2.1.0
+tqdm==4.19.9
+typing==3.7.4.3
