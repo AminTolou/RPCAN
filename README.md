@@ -58,7 +58,9 @@ cd src
 sh demo.sh
 
 ############################################
-Pakage must be donload via pip install
+
+Pakage must be download via pip install
+
 ############################################
 
 cffi -  cmake -cycler -decorator future
