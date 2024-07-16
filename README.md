@@ -42,7 +42,7 @@ How to train the model
 ########################################################
 
 1- Prepare training data
-Download DIV2K training data
+Download DIV2K training data https://data.vision.ee.ethz.ch/cvl/DIV2K/
 
 2- Specify '--dir_data' based on the HR and LR images path. In option.py, '--ext' is set as 'sep_reset', which first convert .png to .npy. If all the training images (.png) are converted to .npy files, then set '--ext sep' to skip converting files.
 
